@@ -31,7 +31,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Days <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li role="presentation"><a href="one.html">dayOne</a></li>
-                        <li role="presentation"><a href="two.html">dayTwo</a></li>
+                        <li role="presentation"><a href="day2.html">dayTwo</a></li>
                         <!--<li role="presentation"><a href="three.html">dayThree</a></li>
                         <li role="presentation"><a href="four.html">dayFour</a></li>
                         <li role="presentation"><a href="five.html">dayFive</a></li>
@@ -70,6 +70,53 @@
             <p>These are referred to as <em>primitives</em> i.e. they are what they are, you can't manipulate them the way you can their object counterparts (below.)</p>
         </main>
     </div>
+
+    <!--This is my Notes-->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-sm-12 col-md-12 col-lg-12 col-xs-12">
+
+                <h2>My Notes</h2>
+
+                <p>When you do a pull request on a branch, you can continue to work on another branch and make another pull request on this other branch.</p>
+                <p>Before creating a new branch, pull the changes from upstream. Your master needs to be up to date.</p>
+                <p>Create the branch on your local machine and switch in this branch :</p>
+                <pre>$ git checkout -b [name_of_your_new_branch]</pre>
+                <p>Change working branch :</p>
+                <pre>$ git checkout [name_of_your_new_branch]</pre>
+                <p>Push the branch on github :</p>
+                <pre>$ git push origin [name_of_your_new_branch]</pre>
+                <p>When you want to commit something in your branch, be sure to be in your branch. Add -u parameter to set upstream.</p>
+                <p>You can see all branches created by using :</p>
+                <pre>$ git branch</pre>
+                <p>Which will show :</p>
+                <pre>* approval_messages
+              master
+              master_clean</pre>
+                <p>Add a new remote for your branch :</p>
+                <pre>$ git remote add [name_of_your_remote] </pre>
+                <p>Push changes from your commit into your branch :</p>
+                <pre>$ git push [name_of_your_new_remote] [name_of_your_branch]</pre>
+                <p>Update your branch when the original branch from official repository has been updated :</p>
+                <div class="highlight highlight-source-shell"><pre>$ git fetch [name_of_your_remote]</pre></div>
+                <p>Then you need to apply to merge changes, if your branch is derivated from develop you need to do :</p>
+                <pre>$ git merge [name_of_your_remote]/develop</pre>
+                <p>Delete a branch on your local filesystem :</p>
+                <pre>$ git branch -d [name_of_your_new_branch]</pre>
+                <p>To force the deletion of local branch on your filesystem :</p>
+                <pre>$ git branch -D [name_of_your_new_branch]</pre>
+                <p>Delete the branch on github :</p>
+                <pre>$ git push origin :[name_of_your_new_branch]</pre>
+                <p>The only difference is the : to say delete, you can do it too by using github interface to remove branch : <a href="https://help.github.com/articles/deleting-unused-branches">https://help.github.com/articles/deleting-unused-branches</a>.</p>
+                <p>If you want to change default branch, it's so easy with github, in your fork go into Admin and in the drop-down list default branch choose what you want.</p>
+
+            </div>
+        </div>
+    </div>
+
+    <!--End of my Notes-->
+
     <div class="row section">
         <aside class="col-sm-3">
             <h2>Quick Overview: Blocks</h2>
