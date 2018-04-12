@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./../css/styles.css">
 </head>
 <body>
-<!-- <body class="show-reminder" id="day_two"> -->
+ <body class="show-reminder" id="day_three">
 <header>
     <div class="logo"><a href="index.html">{ JS1 }</a></div>
     <nav class="navbar navbar-default">
@@ -25,14 +25,14 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav nav-pills navbar-nav pull-right">
-                <!-- <li role="presentation"><a href="resources.html">Resources</a></li> -->
-                <!-- <li role="presentation"><a href="outline.html">Week By Week Outline</a></li> -->
+                 <li role="presentation"><a href="resources.html">Resources</a></li>
+                 <li role="presentation"><a href="outline.html">Week By Week Outline</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Days <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li role="presentation"><a href="one.html">dayOne</a></li>
                         <li role="presentation"><a href="day2.html">dayTwo</a></li>
-                        <!--<li role="presentation"><a href="three.html">dayThree</a></li>
+                        <li role="presentation"><a href="three.html">dayThree</a></li>
                         <li role="presentation"><a href="four.html">dayFour</a></li>
                         <li role="presentation"><a href="five.html">dayFive</a></li>
                         <li role="presentation"><a href="six.html">daySix</a></li>
@@ -40,7 +40,7 @@
                         <li role="presentation"><a href="eight.html">dayEight</a></li>
                         <li role="presentation"><a href="nine.html">dayNine</a></li>
                         <li role="presentation"><a href="ten.html">dayTen</a></li>
-                        <li role="presentation"><a href="eleven.html">dayEleven</a></li> -->
+                        <li role="presentation"><a href="eleven.html">dayEleven</a></li>
                         <li role="presentation"><a href="final.html">finalProject</a></li>
                     </ul>
                 </li>
@@ -111,6 +111,19 @@
                 <p>The only difference is the : to say delete, you can do it too by using github interface to remove branch : <a href="https://help.github.com/articles/deleting-unused-branches">https://help.github.com/articles/deleting-unused-branches</a>.</p>
                 <p>If you want to change default branch, it's so easy with github, in your fork go into Admin and in the drop-down list default branch choose what you want.</p>
 
+                <h3>Var's</h3>
+
+                <p>I don’t use `var` in ES6. There is value in block scope for loops, but I can’t think of a situation where I’d prefer `var` over `let`.</p>
+
+                <p>`const` is a signal that the identifier won’t be reassigned.</p>
+
+                <p>`let`, is a signal that the variable may be reassigned, such as a counter in a loop, or a value swap in an algorithm. It also signals that the variable will be used only in the block it’s defined in, which is not always the entire containing function.</p>
+
+                <p>`var` is now the weakest signal available when you define a variable in JavaScript. The variable may or may not be reassigned, and the variable may or may not be used for an entire function, or just for the purpose of a block or loop.</p>
+
+                <p>Warning:<br>
+
+                With `let` and `const` in ES6, it’s no longer safe to check for an identifier’s existence using `typeof`:</p>
             </div>
         </div>
     </div>
