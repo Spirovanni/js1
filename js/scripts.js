@@ -1,25 +1,29 @@
-// 1. Asks for the user's first name
-let firstname = prompt("Enter your first name: ", "");
 
-// 2. Asks for the user's last name
-let lastname = prompt("Enter your last name: ", "");
-if (confirm("Your name is " + firstname + " " + lastname)) {
-    // 3. Logs the user's first name to the console
-    console.log(firstname);
-    // 4. Alerts the user's last name
-    alert(lastname);
-    document.write("<h1>Hello, " + firstname + " " + lastname +"!</h1>");
-    console.log("Hello", firstname + " " + lastname);
+// 1. Prompts your user for their name.
+let name = prompt("Enter your first name: ", "");
+
+// 2. Asks for the user's favorite color
+let color = prompt("What is your favorite color, red, orange, yellow, green, blue, pink, purple, black, white, and grey? ", "");
+if (color === "red") {
+    document.write("<h1>Hello, " + name + ", " + color + " is so cool! </h1>");
+} else if (color === "blue") {
+    document.write("<h1>Hello " + name + ", Blue is so average but you are not!</h1>");
+} else if (color === "orange") {
+    document.write("<h1>What up " + name + "? Orange you glad you didn't pick blue!</h1>");
+} else if (color === "yellow") {
+    document.write("<h1>Yellow is smarter than you " + name + "!</h1>");
+} else if (color === "green") {
+    document.write("<h1>What up " + name + "? Green is normal, I think he has envy for you!</h1>");
+} else if (color === "pink") {
+    document.write("<h1>Hello " + name + ", Pink is so becoming!</h1>");
+} else if (color === "purple") {
+    document.write("<h1>Hello " + name + ", Purple is Prince's color!</h1>");
+} else if (color === "black") {
+    document.write("<h1>Hello " + name + ", Black is back!</h1>");
+} else if (color === "white") {
+    document.write("<h1>Hello " + name + ", White is so bright!</h1>");
+} else if (color === "grey") {
+    document.write("<h1>Hello " + name + ", Grey is so Grey!</h1>");
 } else {
     document.write("<h1>Hello, world!</h1>");
-}
-
-// 5. Confirms the user's birthday and alerts the resulting birthday
-
-let birthday = prompt("When were you born?: ", "");
-let rightnow = new Date(birthday);
-if (confirm("Your birthday is " + rightnow + ", correct?")) {
-    alert(rightnow);
-} else {
-    alert("Come on now! Everyone has to have a birthday!");
 }
