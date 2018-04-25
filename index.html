@@ -21,12 +21,30 @@
     <div class="row">
         <div class="col-sm-12 text-center">
             <h2>Welcome to my Javascript One Class Page!</h2>
-            <h4>Day 3</h4>
+            <h4>Day 5</h4>
         </div>
-        <!--<p>Am I too old to watch Star Wars?</p>-->
-        <p id="demo"></p>
+        <!--<p id="demo"></p>-->
 
-    </div>
+        <!--Beginning of TODO list-->
+
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="container">
+            <p>
+                <label for="new-task">Add Item</label><input id="new-task" type="text"><button>Add</button>
+            </p>
+
+            <h3>Todo</h3>
+            <ul id="incomplete-tasks">
+                <li><input type="checkbox"><label>Get Paid</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+                <li class="editMode"><input type="checkbox"><label>Watch Avengers: Infinity War</label><input type="text" value="Watch Avengers: Infinity War"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+
+            </ul>
+
+            <h3>Completed</h3>
+            <ul id="completed-tasks">
+                <li><input type="checkbox" checked><label>Be Awesome</label><input type="text"><button class="edit">Edit</button><button class="delete">Delete</button></li>
+            </ul>
+        </div>
     <!--This is my scripts file-->
 <script src="./js/scripts.js"></script>
 </div>
